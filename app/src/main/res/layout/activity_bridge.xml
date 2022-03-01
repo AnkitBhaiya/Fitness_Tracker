@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:src="@drawable/exersice_13"/>
+
+            <Button
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:id="@+id/time"
+                android:layout_marginLeft="105sp"
+                android:text="01:00"
+                android:textSize="40sp"
+                android:padding="15sp"
+                android:background="@drawable/backgroundcrop"
+                />
+
+            <Button
+                android:id="@+id/startbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:backgroundTint="#FFA200"
+                android:text="Start"
+                android:textSize="30sp"
+                android:padding="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:textAlignment="center"
+                android:layout_marginEnd="30sp"
+                android:layout_marginTop="50sp"
+                android:text="How To Do This"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="15sp"
+                android:background="@drawable/text_bg"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DBDCD6"
+                android:elevation="10sp"
+                app:cardCornerRadius="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginRight="5sp"
+                    android:background="#DBDCD6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="25sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:text="@string/pose13"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
